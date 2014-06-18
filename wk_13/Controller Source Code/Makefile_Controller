@@ -1,0 +1,20 @@
+CXX = powerpc-e600-linux-gnu-c++
+
+CXXFLAGS =	-O2 -g -Wall -fmessage-length=0 -static 
+
+SOURCE =	Controller.c Bit_Operations.h GPIO_Bits.h Unit_Conversion.h Fault_Detection.h Memory_Mapping.h File_Operations.h
+
+OBJS =		Controller.o
+
+LIBS =
+
+TARGET =    Team18_Controller	
+
+$(TARGET):	$(SOURCE)
+	$(CXX) $(CXXFLAGS) -o $(TARGET) $(SOURCE) -lrt -lpthread
+
+all:	$(TARGET)
+
+clean:
+	rm -f $(OBJS) $(TARGET)
+
