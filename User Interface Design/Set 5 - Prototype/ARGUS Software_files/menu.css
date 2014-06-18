@@ -1,0 +1,111 @@
+.imclear {
+	CLEAR: left; FONT-SIZE: 1px; VISIBILITY: hidden; LINE-HEIGHT: 0px; HEIGHT: 0px
+}
+.imcm UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: top; CURSOR: pointer; PADDING-TOP: 0px; LIST-STYLE-TYPE: none; TEXT-ALIGN: left
+}
+.imcm LI {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: top; CURSOR: pointer; PADDING-TOP: 0px; LIST-STYLE-TYPE: none; TEXT-ALIGN: left
+}
+.imcm DIV {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: top; CURSOR: pointer; PADDING-TOP: 0px; LIST-STYLE-TYPE: none; TEXT-ALIGN: left
+}
+.imcm SPAN {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: top; CURSOR: pointer; PADDING-TOP: 0px; LIST-STYLE-TYPE: none; TEXT-ALIGN: left
+}
+.imcm UL {
+	ZOOM: 1
+}
+.imsc {
+	POSITION: relative
+}
+.imsubc {
+	BACKGROUND-IMAGE: url(file:///C|/Documents and Settings/rjavaid/Desktop/menuupdate/ie_css_fix); VISIBILITY: hidden; POSITION: absolute
+}
+.imcm LI {
+	FONT-SIZE: 1px; FLOAT: left; LIST-STYLE-TYPE: none
+}
+.imcm UL UL LI {
+	FLOAT: none! important; WIDTH: 100%
+}
+.imcm A {
+	DISPLAY: block; ZOOM: 1; POSITION: relative
+}
+.imcm UL .imsc {
+	Z-INDEX: 1
+}
+.imcm UL .imsubc {
+	Z-INDEX: 1
+}
+.imcm UL UL .imsc {
+	Z-INDEX: 2
+}
+.imcm UL UL .imsubc {
+	Z-INDEX: 2
+}
+.imcm UL UL UL .imsc {
+	Z-INDEX: 3
+}
+.imcm UL UL .imsubc {
+	Z-INDEX: 3
+}
+.imde UL LI:hover .imsubc {
+	VISIBILITY: visible
+}
+.imde UL UL LI:hover .imsubc {
+	VISIBILITY: visible
+}
+.imde UL UL UL LI:hover .imsubc {
+	VISIBILITY: visible
+}
+.imde LI:hover UL .imsubc {
+	VISIBILITY: hidden
+}
+.imde LI:hover UL UL .imsubc {
+	VISIBILITY: hidden
+}
+.imde LI:hover UL UL UL .imsubc {
+	VISIBILITY: hidden
+}
+.imea {
+	FLOAT: right; POSITION: relative; HEIGHT: 0px; TEXT-ALIGN: right
+}
+.imea DIV {
+	FONT-SIZE: 1px; LINE-HEIGHT: 0px; POSITION: relative
+}
+#imouter0 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+#imenus0 LI UL {
+	PADDING-RIGHT: 2px; BACKGROUND-POSITION: right 50%; PADDING-LEFT: 2px; FONT-WEIGHT: bold; FONT-SIZE: 11px; PADDING-BOTTOM: 2px; PADDING-TOP: 2px; BACKGROUND-COLOR: #000000
+}
+#imenus0 LI A {
+	PADDING-RIGHT: 6px; PADDING-LEFT: 6px; FONT-WEIGHT: bold; FONT-SIZE: 11px; PADDING-BOTTOM: 6px; COLOR: #ffffff; PADDING-TOP: 6px; FONT-FAMILY: Verdana, Arial, Helvetica; TEXT-ALIGN: left; TEXT-DECORATION: none
+}
+UNKNOWN {
+	BACKGROUND-COLOR: #cc3333
+}
+#imenus0 LI A.ihover {
+	BACKGROUND-IMAGE: url(file:///C|/Documents and Settings/rjavaid/Desktop/menuupdate/images/bkg_nav_hover.jpg)
+}
+.imde #imenus0 A:hover {
+	BACKGROUND-IMAGE: url(file:///C|/Documents and Settings/rjavaid/Desktop/menuupdate/images/bkg_nav_hover.jpg)
+}
+#imenus0 LI A.iactive {
+	BACKGROUND-IMAGE: url(file:///C|/Documents and Settings/rjavaid/Desktop/menuupdate/images/bkg_nav_hover.jpg)
+}
+#imenus0 .imbuttons {
+	
+}
+#imenus0 UL A {
+	PADDING-RIGHT: 7px; PADDING-LEFT: 7px; FONT-WEIGHT: bold; FONT-SIZE: 11px; PADDING-BOTTOM: 4px; COLOR: #cccccc; BORDER-TOP-STYLE: none; PADDING-TOP: 4px; FONT-FAMILY: Verdana, Arial, Helvetica; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BACKGROUND-COLOR: #000000; TEXT-ALIGN: left; TEXT-DECORATION: none; BORDER-BOTTOM-STYLE: none
+}
+UNKNOWN {
+	COLOR: #ffbf00; TEXT-DECORATION: none
+}
+#imenus0 UL LI A.ihover {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+#imenus0 UL LI A.iactive {
+	BACKGROUND-COLOR: #ffffff
+}

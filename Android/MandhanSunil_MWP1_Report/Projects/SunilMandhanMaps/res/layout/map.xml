@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/GridLayoutmap1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="14"
+    android:orientation="horizontal" >
+
+    <ToggleButton
+        android:id="@+id/toggleButtonmap1"
+        android:layout_column="0"
+        android:layout_gravity="bottom"
+        android:layout_row="0"
+        android:text="GPS Toggle" />
+
+    <EditText
+        android:id="@+id/editTextmap1"
+        android:layout_width="251dp"
+        android:layout_height="40dp"
+        android:layout_column="0"
+        android:layout_row="0" />
+
+    <Button
+        android:id="@+id/buttonmap1"
+        android:layout_height="wrap_content"
+        android:layout_column="12"
+        android:layout_gravity="right"
+        android:layout_row="0"
+        android:text="map it" />
+
+    <com.google.android.maps.MapView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/mapview"
+        android:layout_width="fill_parent"
+        android:layout_height="375dp"
+        android:layout_column="0"
+        android:layout_columnSpan="13"
+        android:layout_gravity="right"
+        android:layout_row="1"
+        android:apiKey="0E6K395vQKyngWfm6sUh0xLrz7zrj1_ARcI4Evw"
+        android:clickable="true" >
+    </com.google.android.maps.MapView>
+
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="86dp"
+        android:layout_column="0"
+        android:layout_gravity="fill_horizontal"
+        android:layout_row="0" />
+
+    <Space
+        android:layout_width="203dp"
+        android:layout_height="1dp"
+        android:layout_column="0"
+        android:layout_row="0" />
+
+</GridLayout>
