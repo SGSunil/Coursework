@@ -1,0 +1,21 @@
+> 17.0
+> 25.0
+> 18.0
+> 36.0
+> 2.0
+> 
+CVM statistics
+--------------
+Number of instructions executed: 10
+Execution sequence:
+CONST 17.0
+PRINT
+CONST 25.0
+PRINT
+CONST 18.0
+PRINT
+CONST 36.0
+PRINT
+CONST 2.0
+PRINT
+

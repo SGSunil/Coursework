@@ -1,0 +1,7 @@
+A = 3
+print a
+B = .5
+print B
+C = d * 2
+e = print
+exit

@@ -1,0 +1,40 @@
+> > -0.7055403255703919
+> 0.70866977429126
+> -0.995584052213885
+> > > 5.5
+> 5.5
+> > 5.5
+> 
+CVM statistics
+--------------
+Number of instructions executed: 28
+Execution sequence:
+CONST 5.5
+STORE 0
+LOAD 0
+SIN
+PRINT
+LOAD 0
+COS
+PRINT
+LOAD 0
+TAN
+PRINT
+LOAD 0
+LN
+STORE 1
+LOAD 1
+EXP
+STORE 2
+LOAD 0
+PRINT
+LOAD 2
+PRINT
+LOAD 0
+LOG
+STORE 1
+CONST 10.0
+LOAD 1
+POW
+PRINT
+

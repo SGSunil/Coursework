@@ -1,0 +1,19 @@
+> > print a
+      ^ Symbol 'a' has not been assigned a value
+> > 0.5
+> C = d * 2
+    ^ Symbol 'd' has not been assigned a value
+> e = print
+    ^ Syntax Error
+> 
+CVM statistics
+--------------
+Number of instructions executed: 6
+Execution sequence:
+CONST 3.0
+STORE 0
+CONST 0.5
+STORE 1
+LOAD 1
+PRINT
+

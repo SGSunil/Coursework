@@ -1,0 +1,11 @@
+X = 5.5
+print sin(X)
+print cos(X)
+print tan(X)
+a = ln(X)
+b = exp(a)
+print X
+print b
+a = log(X)
+print 10 ^ a
+exit 
