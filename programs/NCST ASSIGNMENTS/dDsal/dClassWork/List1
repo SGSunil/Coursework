@@ -1,0 +1,8 @@
+insert sasi 40
+insert srini 30
+print 1
+insert pradeep 35
+remove 3
+print 1
+stop
+

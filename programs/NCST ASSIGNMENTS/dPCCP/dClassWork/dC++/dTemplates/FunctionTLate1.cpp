@@ -1,0 +1,36 @@
+// basics/max3a.cpp 
+
+#include <iostream> 
+#include <cstring> 
+#include <string> 
+using namespace std;
+// maximum of two values of any type (call-by-reference) 
+template <typename T> 
+inline T const& max (T const& a, T const& b) 
+{ 
+    return a < b ? b : a; 
+} 
+
+// maximum of two C-strings (call-by-value) 
+inline char const* max (char const* a, char const* b) 
+{ 
+    return std::strcmp(a,b) < 0 ? b : a; 
+} 
+
+// maximum of three values of any type (call-by-reference) 
+template <typename T> 
+inline T const& max (T const& a, T const& b, T const& c) 
+{ 
+    return max (max(a,b), c); // error, if max(a,b) uses call-by-value 
+} 
+
+int main () 
+{ 
+    ::max(7, 42, 68); // OK 
+
+    const char* s1 = "frederic"; 
+    const char* s2 = "anica"; 
+    const char* s3 = "lucas"; 
+    cout<<::max(s1, s2, s3)<<endl; // ERROR 
+
+} 

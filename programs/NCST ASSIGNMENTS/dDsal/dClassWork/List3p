@@ -1,0 +1,11 @@
+insert a 90
+insert b 90
+insert c 90
+print 3
+print 1
+remove 3
+print 3
+print 2
+remove 2
+print 1
+stop

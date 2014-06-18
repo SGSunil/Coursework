@@ -1,0 +1,134 @@
+#include<iostream>
+#include<iomanip>
+using namespace std;
+class String;
+//******************************************function overloading
+int add1(char a);
+void add1(int a,int b);
+
+//*****************************************
+//******************************************operator overloading
+String& operator+(String& ,String&);
+void operator+=(String& ,String&);
+ostream& operator(ostream c,String a);
+
+//*****************************************
+//******************************************overloading
+
+//*****************************************
+
+
+class String{
+	public:
+	char *str;
+	int len;
+
+	public:
+	String(){
+		cout<<"Called default constructor "<<endl;
+		len=50;
+		str=new char[len+1];
+		str[len]='\0';
+	}
+	
+	String(const char* strc){
+		len=strlen(strc)+1;
+		cout<<"len is "<<len<<endl;
+		str=new char[len];
+		strcpy(str,strc);
+		str[len]='\0';
+	}		
+
+	
+	String(const String& sObj){
+		cout<<"Called copy constructor "<<endl;
+		len=strlen(sObj.str)+1;
+		str=new char[len];
+		strcpy(this->str,sObj.str);
+	}
+	
+	~String(){
+		//cout<<"Called distructor "<<"for String "<<str;
+		cout<<"Called distructor "<<"for String "<<str<<endl;
+		if(str==NULL)
+		cout<<"here "<<endl;
+		else
+		delete str;
+
+	}
+
+	void printAll( ){
+		cout<<"String value is "<<str<<"***"<<endl;
+	
+	}
+	void operator=(String& b){
+		len=strlen(b.str);
+		delete[] str;
+		str=new char[len+1];
+		strcpy(str,b.str);
+	}
+	//friend String operator+(String&,String&);
+	//friend void operator+=(String& ,String&);
+};
+
+
+ 
+
+
+int main(){
+	String *s=new String("ONS1");
+	String *s1=new String("ONS2");
+	String *s3=new String();
+	*s3=*s+(*s1);
+	*s3+=*s;
+	s3->printAll();
+	(*s1).printAll();
+	s->printAll();
+	String s4("mandhan");	
+	*s3=s4;
+
+	//delete s;
+	//delete s1;
+	//delete s3;
+	//add1(12,13);
+	//add1(48);
+
+	cout<<"yes"<<endl;
+	cout<<"sunil"<<endl<<(cout<<"mandhan"<<endl);	
+	cout<<"yes"<<endl;
+	cout<<s4<<endl;
+	return 0;
+}
+//******************************************overloading
+void add1(int a,int b){
+	printf("%d\n",(a+b));
+}
+
+int add1(char a){
+	printf("%c\n",(a));
+}
+
+//*****************************************
+//******************************************operator overloading
+String& operator+(String& a,String& b){
+	String *temp=new String();
+	temp->len=strlen(a.str)+strlen(b.str)+1;
+	temp->str=new char[temp->len];
+	strcpy(temp->str,a.str);
+	strcat(temp->str,b.str);
+	return *temp;
+}
+void operator+=(String& a,String& b){
+	a.len=a.len+b.len;
+	char *temp = new char[a.len+1];
+	strcpy(temp,a.str);
+	strcat(temp,b.str);
+	a.str = new char[a.len];
+	strcpy(a.str,temp);
+}
+
+ostream& operator<<(ostream& c,String& a){
+	return ostream<<a;
+}
+
+//*****************************************

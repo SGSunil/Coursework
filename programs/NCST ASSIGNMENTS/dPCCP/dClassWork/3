@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+class God{
+	public:
+	static char presence[];
+	char name[30];
+	char day[10];
+	void getName();
+};
+void God::getName( ){
+	cout<<name<<endl<<day<<endl;
+}
+char God::presence[]="world";
+
+int main(){
+	
+	God g;
+	g.name="Shiva";
+	g.day="Monday";
+	g.getName();
+	cout << "ons" << "\n" << "osso" << "\n";
+}

@@ -1,0 +1,31 @@
+while(i<mlen) master scan=  s/i
+inside outer else
+while(i<mlen) master scan=  u/i
+inside outer else
+while(i<mlen) master scan=  n/i
+inside outer else
+while(i<mlen) master scan=  i/i
+scan==master i
+while(i<mlen) master scan=  l/l
+scan==master l
+while(i<mlen) master scan=  m/*
+flaged (*)star=true
+inside star==true
+else no match to prev
+while(i<mlen) master scan=  m/a
+inside outer else
+while(i<mlen) master scan=  m/i
+inside outer else
+while(i<mlen) master scan=  a/i
+inside outer else
+while(i<mlen) master scan=  n/i
+inside outer else
+while(i<mlen) master scan=  d/i
+inside outer else
+while(i<mlen) master scan=  h/i
+inside outer else
+while(i<mlen) master scan=  a/i
+inside outer else
+while(i<mlen) master scan=  n/i
+inside outer else
+0
